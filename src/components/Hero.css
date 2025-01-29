@@ -1,0 +1,45 @@
+/* .hero-main-text{
+    margin: 50px;
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(98, 98, 98);
+}
+.hero-main button{
+    margin: 50px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #d42d2d;
+    border: none;
+}
+.hero-main button:hover{
+    background-color:#9a2727;
+    transition: 0.2s
+} */
+
+/* .hero-main-image{
+    width: 100%;
+    height: auto;
+} */
+
+
+/* Main container */
+.hero-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of the screen */
+    height: auto; /* Adjust height automatically */
+    padding: 10px; /* Optional padding */
+    box-sizing: border-box; /* Ensures padding is part of the width */
+    background-color: #f5f5f5; /* Optional background color */
+}
+  
+  /* Image container */
+.hero-main-image img {
+    width: 100%; /* Image scales to fit the parent container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the container neatly */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+  
