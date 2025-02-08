@@ -7,7 +7,7 @@
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 20px 0 0;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -85,6 +85,12 @@
   
   /* Mobile Menu */
   @media (max-width: 768px) {
+
+    .header-logo{
+      width: 200px;
+    }
+
+
     .hamburger-icon {
       display: flex; /* Visible only on mobile */
     }
@@ -114,6 +120,13 @@
     .header-nav ul {
       flex-direction: column;
       gap: 10px;
+    }
+  }
+
+  @media (max-width: 425px){
+    .header-logo{
+      width: 120px;
+      margin-left: 20px;
     }
   }
   

@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className='hero-main'>
         <div className='hero-main-image'>
-            <img src={myImage}/>
+            <img alt='hero-image' src={myImage}/>
         </div>
         {/* <div className='hero-main-text'>
             Sustainable. Beautiful. Ethical.
