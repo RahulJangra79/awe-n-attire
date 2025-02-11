@@ -1,8 +1,11 @@
 import React from "react";
 import "./AboutUs.css";
-import image1 from "../images/bestseller-11.jpg";
-import image2 from "../images/bestseller-22.jpg";
-import image3 from "../images/bestseller-33.jpg";
+import image11 from "../images/about 1.jpg";
+import image22 from "../images/about 22.jpg";
+import image33 from "../images/about 33.jpg";
+import image1 from "../images/about 1.jpg";
+import image2 from "../images/about 2.jpg";
+import image3 from "../images/about 3.jpg";
 
 function AboutUs() {
   return (
@@ -13,9 +16,9 @@ function AboutUs() {
                 memorable experiences for our customers.</p>
         </div>
         <div className='aboutus-our-story-images'>
-            <img alt='img1' src={image1}/>
-            <img alt='img1' src={image2}/>
-            <img alt='img1' src={image3}/>
+            <img alt='img1' src={image11}/>
+            <img alt='img1' src={image22}/>
+            <img alt='img1' src={image33}/>
         </div>
         <div className="aboutus-container">
             <div className="aboutus-image-container from-left">
