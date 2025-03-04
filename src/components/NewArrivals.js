@@ -1,61 +1,35 @@
-import React from 'react'
-import "./NewArrivals.css"
-import bestseller1 from "../images/bestseller-11.jpg";
-import bestseller2 from "../images/bestseller-22.jpg";
-import bestseller3 from "../images/bestseller-33.jpg";
+import React from "react";
+import "./NewArrivals.css";
+import newarrivaldata from "../data/Productsdata";
 
 function NewArrivals() {
+
+  const newarrival = newarrivaldata.filter(product => product.categories.includes("New Arrival"));
+
   return (
-    <div className='new-arrivals'>
-        <div className='new-arrivals-main'>
-            <div className='new-arrivals-text'>
-                New Arrivals
+    <div className="new-arrivals">
+      <div className="new-arrivals-main">
+        <div className="new-arrivals-text">NEW ARRIVALS</div>
+        <div className="new-arrivals-products">
+
+        {newarrival.map((product) => {
+          return (
+            <div className="new-arrivals-product">
+              <img src={product.img} alt={product.name}></img>
+              <p className="new-arrivals-product-name">{product.name}</p>
+              <p className="new-arrivals-product-price">{product.price}</p>
             </div>
-            <div className='new-arrivals-products'>
-                <div className='new-arrivals-product'>
-                    <img src={bestseller1} alt='image-1'></img>
-                    <p className='new-arrivals-product-name'>I'm a Product</p>
-                    <p className='new-arrivals-product-price'>$10.99</p>
-                </div>
-
-                <div className='new-arrivals-product'>
-                    <img src={bestseller2} alt='image-2'></img>
-                    <p className='new-arrivals-product-name'>I'm a Product</p>
-                    <p className='new-arrivals-product-price'>$10.99</p>
-                </div>
-
-                <div className='new-arrivals-product'>
-                    <img src={bestseller3} alt='image-3'></img>              
-                    <p className='new-arrivals-product-name'>I'm a Product</p>
-                    <p className='new-arrivals-product-price'>$10.99</p>
-                </div>
-
-                <div className='new-arrivals-product'>
-                    <img src={bestseller1} alt='image-1'></img>
-                    <p className='new-arrivals-product-name'>I'm a Product</p>
-                    <p className='new-arrivals-product-price'>$10.99</p>
-                </div>
-
-                <div className='new-arrivals-product'>
-                    <img src={bestseller2} alt='image-2'></img>
-                    <p className='new-arrivals-product-name'>I'm a Product</p>
-                    <p className='new-arrivals-product-price'>$10.99</p>
-                </div>
-
-                <div className='new-arrivals-product'>
-                    <img src={bestseller3} alt='image-3'></img>              
-                    <p className='new-arrivals-product-name'>I'm a Product</p>
-                    <p className='new-arrivals-product-price'>$10.99</p>
-                </div>
-            </div>
-
-            
-
-            <button className='new-arrivals-products-shop-now-button'>View More</button>
+          )
+        })}
 
         </div>
+
+        <button className="new-arrivals-products-shop-now-button">
+          <a href="/allproducts">View More </a>
+        </button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default NewArrivals
+export default NewArrivals;

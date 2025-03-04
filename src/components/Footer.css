@@ -111,13 +111,13 @@
   @media (max-width: 480px) {
     .footer {
       flex-direction: column; /* Stack columns vertically */
-      align-items: center; /* Center align items */
+      align-items: flex-start; /* Center align items */
       text-align: center; /* Center text in columns */
     }
   
     .footer-column {
       width: 100%; /* Full width for each column */
-      max-width: 250px; /* Prevents too much stretching */
+      max-width: 250px; /* Prevents too much stretching */      
     }
   
     .footer-column h4 {
