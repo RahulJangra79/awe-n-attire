@@ -26,9 +26,9 @@ const Footer = () => {
           <h4>Awe & Attire</h4>
           <ul>
             <li><a href="/about">About</a></li>
-            <li><a href="/sustainability">Sustainability</a></li>
-            <li><a href="/accessibility">Accessibility</a></li>
-            <li><a href="/store-locator">Store Locator</a></li>
+            <li><a href="/about">Sustainability</a></li>
+            <li><a href="/about">Accessibility</a></li>
+            <li><a href="/about">Store Locator</a></li>
           </ul>
         </div>
         <div className="footer-column">

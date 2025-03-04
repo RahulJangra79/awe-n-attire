@@ -11,11 +11,6 @@
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
-  /* .header-logo h2 {
-    font-size: 26px;
-    color: #333;
-  } */
 
   .header-logo{
     background-image: url('../images/logo-main.jpg');
@@ -128,5 +123,78 @@
       width: 120px;
       margin-left: 20px;
     }
+  }
+  
+  .login-button, .logout-button{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .login-button:hover{
+    color: #ca3131f0;
+  }
+
+  .logout-button:hover{
+    color: #ca3131f0;
+  }
+
+  .user-dropdown {
+    position: relative;
+  }
+  
+  .user-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .user-button:hover {
+    color: #ca3131f0;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 120px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu button {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dropdown-menu button:hover {
+    background: #f0f0f0;
+    color: #ca3131f0;
+  }
+  
+  .active-link {
+    color: #ca3131f0 !important;
   }
   
