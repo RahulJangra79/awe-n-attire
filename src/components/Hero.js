@@ -8,10 +8,6 @@ function Hero() {
         <div className='hero-main-image'>
             <img alt='hero-image' src={myImage}/>
         </div>
-        {/* <div className='hero-main-text'>
-            Sustainable. Beautiful. Ethical.
-        </div>
-        <button>Shop Now</button> */}
     </div>
   )
 }
