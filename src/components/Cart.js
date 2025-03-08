@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Cart.css";
+import Swal from "sweetalert2";
+
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -36,6 +38,13 @@ const Cart = () => {
       setDiscount(0);
       setCouponMessage("Invalid coupon code.");
     }
+  };
+
+  const handleCheckout = () => {
+    Swal.fire({
+          icon: "error",
+          title: "We can't accept Online orders right now",
+        });
   };
 
   const handleQuantityChange = (id, amount) => {
@@ -109,7 +118,7 @@ const Cart = () => {
         {discount > 0 && <p>Discount: <span>-${discountAmount.toFixed(2)}</span></p>}
         <p>Delivery: <span>FREE</span></p>
         <p className="total"><strong>Total: ${total.toFixed(2)}</strong></p>
-        <button className="checkout-button">Checkout</button>
+        <button className="checkout-button" onClick={handleCheckout}>Checkout</button>
       </div>
     </div>
   );
